@@ -2,7 +2,7 @@
 
 /* leaves space for the window buttons */
 #nav-bar {
-  margin-top: -38px !important;
+    margin-top: -38px !important;
 	margin-right: 0px !important;
 	margin-bottom: -4px !important;
 }
@@ -54,14 +54,14 @@ See the above repository for updates as well as full license text. */
 /* The border controlling sidebar width will be removed so you'll need to modify these values to change width */
 
 #sidebar-box{
-  --uc-sidebar-width: 44px; /* Only thing I (gale) changed */
-  --uc-sidebar-hover-width: 320px;
-  --uc-autohide-sidebar-delay: 600ms; /* Wait 0.6s before hiding sidebar */
-  position: relative;
-  min-width: var(--uc-sidebar-width) !important;
-  width: var(--uc-sidebar-width) !important;
-  max-width: var(--uc-sidebar-width) !important;
-  z-index:1;
+    --uc-sidebar-width: 44px; /* Only thing I (gale) changed */
+    --uc-sidebar-hover-width: 320px;
+    --uc-autohide-sidebar-delay: 600ms; /* Wait 0.6s before hiding sidebar */
+    position: relative;
+    min-width: var(--uc-sidebar-width) !important;
+    width: var(--uc-sidebar-width) !important;
+    max-width: var(--uc-sidebar-width) !important;
+    z-index:1;
 }
 
 #sidebar-box[positionend] {
