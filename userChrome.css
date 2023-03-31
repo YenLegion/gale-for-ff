@@ -55,8 +55,8 @@ See the above repository for updates as well as full license text. */
 
 #sidebar-box{
     --uc-sidebar-width: 44px; /* Only thing I (gale) changed */
-    --uc-sidebar-hover-width: 320px;
-    --uc-autohide-sidebar-delay: 600ms; /* Wait 0.6s before hiding sidebar */
+    --uc-sidebar-hover-width: 400px;
+    --uc-autohide-sidebar-delay: 1500ms; /* Wait 1.5s before hiding sidebar */
     position: relative;
     min-width: var(--uc-sidebar-width) !important;
     width: var(--uc-sidebar-width) !important;
