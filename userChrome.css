@@ -40,8 +40,8 @@
   /*  Width of the URL Bar for the Oneline layout
    *  If enabled the max-width is applied on focus
    *  otherwise the URL Bar will always be it's min-width
-   */ --uc-urlbar-min-width: 300vw;
-      --uc-urlbar-position: 1;
+   */ --uc-urlbar-min-width: 200vw;
+      --uc-urlbar-position: 0;
 }
 
 
@@ -55,12 +55,9 @@ See the above repository for updates as well as full license text. */
 
 
 #sidebar-box{
-    --uc-sidebar-width: 44px; /* Only thing I (gale) changed */
+    --uc-sidebar-width: 250px; /* Only thing I (gale) changed -- Changed again by me (Alan) */
     --uc-sidebar-hover-width: 400px;
     --uc-autohide-sidebar-delay: 1500ms; /* Wait 1.5s before hiding sidebar */
-    --uc-sidebar-width: 320px; /* Only thing I (gale) changed */
-    --uc-sidebar-hover-width: 400px;
-    --uc-autohide-sidebar-delay: 600ms; /* Wait 0.6s before hiding sidebar */
     position: relative;
     min-width: var(--uc-sidebar-width) !important;
     width: var(--uc-sidebar-width) !important;
@@ -113,7 +110,7 @@ See the above repository for updates as well as full license text. */
 
 .sidebar-panel #search-box {
 	-moz-appearance: none !important;
-	background-color: rgba(249, 249, 250, 0.1) !important;
+	background-color: #24273a !important;
 	color: inherit !important;
 }
 
@@ -122,8 +119,8 @@ See the above repository for updates as well as full license text. */
 #sidebar,
 #sidebar-header {
 	background-color: inherit !important;
-	border-inline: 1px solid rgb(80, 80, 80);
-	border-inline-width: 0px 1px;
+	border-inline: 1px solid #313244;
+	border-inline-width: 0px 2px;
 }
 
 #sidebar-box:not([positionend]) > :-moz-locale-dir(rtl),
