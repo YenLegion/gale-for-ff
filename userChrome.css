@@ -55,7 +55,7 @@ See the above repository for updates as well as full license text. */
 
 
 #sidebar-box{
-    --uc-sidebar-width: 250px; /* Only thing I (gale) changed -- Changed again by me (Alan) */
+    --uc-sidebar-width: 44px; /* Only thing I (gale) changed -- Changed again by me (Alan) */
     --uc-sidebar-hover-width: 400px;
     --uc-autohide-sidebar-delay: 1500ms; /* Wait 1.5s before hiding sidebar */
     position: relative;
