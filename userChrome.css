@@ -1,20 +1,29 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* leaves space for the window buttons */
+
 #nav-bar {
-    margin-top: -38px !important;
-	margin-right: 0px !important;
-	margin-bottom: -4px !important;
+    /* this hides the tab bar */
+    margin-top: -40px !important;
 }
+
+/* hide the top bar entirely when not hovered, leaving a small strip to hover over */
+/* commenting out the next few blocks should disable this behavior */
+#nav-bar {
+	margin-bottom: -35px !important;
+    z-index: -100;
+}
+#navigator-toolbox:focus-within > #nav-bar,
+#navigator-toolbox:hover > #nav-bar
+{
+  margin-top: 0;
+  margin-bottom: -40px;
+  z-index: 100;
+}
+
 
 /* hides the sidebar header */
 #sidebar-header {
 	display: none !important;
-}
-
-.tab[selected="true"] {
-	visibility: collapse;
-	height: 0px;
 }
 
 .tabbrowser-tab {
@@ -22,27 +31,69 @@
 	height: 0px;
 }
 
-.tabbrowser-tab[visuallyselected="true"] {
-	visibility: collapse;
-	height: 0px;
+#urlbar {
+    font-size: 20px !important;
+    padding-block-start: 3px !important;
 }
 
+/* Make the urlbar smaller -- not really necessary when top bar autohides */
+/* #urlbar-container { */
+/*     max-width: 1500px !important; */
+
+/*     margin-left: 200px !important; */
+/*     margin-right: 200px !important; */
+/* } */
+
+#main-window,
+#toolbar-menubar,
+#TabsToolbar,
+#navigator-toolbox,
+#sidebar-box,
+#nav-bar {
+    box-shadow: none !important;
+    }
+
+#PersonalToolbar {
+  padding: 6px !important;
+}
+
+#statuspanel #statuspanel-label {
+
+  border: none !important;
+  border-radius: 15px !important;
+
+}
+
+#main-window,
+#toolbar-menubar,
+#TabsToolbar,
+#PersonalToolbar,
+#navigator-toolbox,
+#sidebar-box,
+#nav-bar { border: none !important; }
+
+/* Encryption and Permissions icons */
+  /* Only hides permission items */
+  /* #identity-permission-box { display: none !important; } */
+  /* Hides encryption AND permission items */
+  #identity-box { display: none !important }
+
+/* Hide everything BUT the zoom indicator within the URL Bar */
+#page-action-buttons > :not(#urlbar-zoom-button) { display: none !important; }
+
+/* Hide the »Go«-arrow in the URL Bar */
+#urlbar-go-button { display: none !important; }
+
+/* #back-button, */
+/* #forward-button { display: none !important; } */
+
+/* remove window control buttons */
 .titlebar-buttonbox-container { display: none !important; }
-#pageActionButton { display: none !important; }
 
-/* added by me (Alan) */
-#PanelUI-menu-button { padding: 0px !important; }
-#PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; }
-#PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; }
-#alltabs-button { display: none !important; }
-:root {
-
-  /*  Width of the URL Bar for the Oneline layout
-   *  If enabled the max-width is applied on focus
-   *  otherwise the URL Bar will always be it's min-width
-   */ --uc-urlbar-min-width: 200vw;
-      --uc-urlbar-position: 0;
-}
+/* Hide the hamburger menu: */
+/* #PanelUI-menu-button { padding: 0px !important; } */
+/* #PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; } */
+/* #PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; } */
 
 
 /* Credits to https://github.com/MrOtherGuy for hthe following snippet*/
