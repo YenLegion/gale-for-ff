@@ -3,24 +3,24 @@
 
 #nav-bar {
     /* this hides the tab bar */
-    margin-top: -33px !important;
+    margin-top: -40px !important;
 }
 
 /* hide the top bar entirely when not hovered, leaving a small strip to hover over */
 /* commenting out the next few blocks should disable this behavior */
-/* #nav-bar { */
-	/* margin-bottom: -35px !important; */
-    /* z-index: -100; */
-/* } */
-/* #navigator-toolbox:focus-within > #nav-bar, */
-/* #navigator-toolbox:hover > #nav-bar */
-/* { */
-  /* margin-top: 0; */
-  /* margin-bottom: -40px; */
-  /* z-index: 100; */
-/* } */
+#nav-bar {
+	margin-bottom: -35px !important;
+    z-index: -100;
+}
+#navigator-toolbox:focus-within > #nav-bar,
+#navigator-toolbox:hover > #nav-bar
+{
+  margin-top: 0;
+  margin-bottom: -40px;
+  z-index: 100;
+}
 
-/*  */
+
 /* hides the sidebar header */
 #sidebar-header {
 	display: none !important;
@@ -32,7 +32,7 @@
 }
 
 #urlbar {
-    font-size: 12px !important;
+    font-size: 20px !important;
     padding-block-start: 3px !important;
 }
 
@@ -76,10 +76,10 @@
   /* Only hides permission items */
   /* #identity-permission-box { display: none !important; } */
   /* Hides encryption AND permission items */
-  /* #identity-box { display: none !important } */
+  #identity-box { display: none !important }
 
 /* Hide everything BUT the zoom indicator within the URL Bar */
-/* #page-action-buttons > :not(#urlbar-zoom-button) { display: none !important; } */
+#page-action-buttons > :not(#urlbar-zoom-button) { display: none !important; }
 
 /* Hide the »Go«-arrow in the URL Bar */
 #urlbar-go-button { display: none !important; }
@@ -108,7 +108,7 @@ See the above repository for updates as well as full license text. */
 #sidebar-box{
     --uc-sidebar-width: 44px; /* Only thing I (gale) changed -- Changed again by me (Alan) */
     --uc-sidebar-hover-width: 400px;
-    --uc-autohide-sidebar-delay: 1000ms; /* Wait 1.5s before hiding sidebar */
+    --uc-autohide-sidebar-delay: 1500ms; /* Wait 1.5s before hiding sidebar */
     position: relative;
     min-width: var(--uc-sidebar-width) !important;
     width: var(--uc-sidebar-width) !important;
