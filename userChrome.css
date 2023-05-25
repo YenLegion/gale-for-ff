@@ -3,7 +3,7 @@
 
 #nav-bar {
     /* this hides the tab bar */
-    margin-top: -40px !important;
+    margin-top: -38px !important;
 }
 
 /* hide the top bar entirely when not hovered, leaving a small strip to hover over */
@@ -37,12 +37,13 @@
 }
 
 /* Make the urlbar smaller -- not really necessary when top bar autohides */
-/* #urlbar-container { */
+#urlbar-container {
 /*     max-width: 1500px !important; */
 
-/*     margin-left: 200px !important; */
-/*     margin-right: 200px !important; */
-/* } */
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+    margin-top: 2px;
+}
 
 #main-window,
 #toolbar-menubar,
